@@ -1,0 +1,8 @@
+module.exports = {
+  APP_ID: '<RegisteredClientId>',
+  AUTH_URL: 'https://login.microsoftonline.com/<TenantId>',
+  REDIRECT_URL: 'http://localhost:3000/',
+  API_SCOPES: [
+    'user.read'
+  ] // API Permissions
+};

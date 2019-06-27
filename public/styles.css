@@ -50,3 +50,7 @@ main {
 main p {
  max-width: 800px;
 }
+
+.error {
+  color: #a4262c;
+}
