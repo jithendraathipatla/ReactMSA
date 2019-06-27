@@ -11,6 +11,10 @@
     "AzureAD",
     "MSAL"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamhm/azuread-msal-authentication.git"
+  },
   "author": "Harish Mathanan",
   "license": "MIT",
   "dependencies": {
