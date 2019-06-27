@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 const Navbar = (props) => {
   return (
     <header>
-      <nav>
+      <nav className="navbar">
 
-        <div>
-          <a href="#">React with AzureAD Auth</a>
+        <div className="navbar-left">
+          <div className="navbar-item">
+            <a href="#" className="navbar-title">React with AzureAD Auth</a>
+          </div>
         </div>
 
-        <div>
+        <div className="navbar-right">
           <ActionLinks {...props} />
         </div>
 
@@ -22,17 +24,17 @@ const Navbar = (props) => {
 const ActionLinks = ({ isAuth, user, signIn, signOut }) => {
   if (isAuth && user) {
     return (
-      <div>
+      <div className="navbar-item">
         <span>{user.name}</span>
         <span>&nbsp; | &nbsp;</span>
-        <a href="#" onClick={signOut}>Sign Out</a>
+        <a href="#" className="navbar-link" onClick={signOut}>Sign Out</a>
       </div>
     );
 
   } else {
     return (
-      <div>
-        <a href="#" onClick={signIn}>Sign In</a>
+      <div className="navbar-item">
+        <a href="#" className="navbar-link" onClick={signIn}>Sign In</a>
       </div>
     );
   }
