@@ -13,7 +13,7 @@ class App extends React.Component {
       auth: {
         clientId: Config.APP_ID,
         authority: Config.AUTH_URL,
-        redirectUri: Config.REDIRECT_URL
+        redirectUri: Config.REDIRECT_URL,
       },
       cache: {
         cacheLocation: 'localStorage',
